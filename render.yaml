@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: chat-app-server
+    env: node
+    region: singapore
+    buildCommand: npm install
+    startCommand: npm start
+    rootDir: server
+    envVars:
+      - key: NODE_VERSION
+        value: 20.11.0
+      - key: PORT
+        value: 10000
